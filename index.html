@@ -3,200 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splashy Dashiez - Your Car's Best Friend</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom Inter font */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-        /* All Custom CSS goes here */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f8ff; /* Light blue background */
-        }
-
-        /* Custom scrollbar for a touch of style */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #e0f2fe; /* Lighter blue */
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #3b82f6; /* Medium blue */
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #2563eb; /* Darker blue on hover */
-        }
-    </style>
+    <title>Splashy Dashiez - Premium Car Wash</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="text-gray-800">
-
-    <!-- Header Section -->
-    <header class="bg-blue-700 text-white shadow-lg py-4 px-6 md:px-12 flex justify-between items-center rounded-b-lg">
-        <div class="text-3xl font-bold rounded-md bg-blue-800 p-2 shadow-md">Splashy Dashiez</div>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="hover:text-blue-200 transition duration-300 ease-in-out font-medium">Home</a></li>
-                <li><a href="#services" class="hover:text-blue-200 transition duration-300 ease-in-out font-medium">Services</a></li>
-                <li><a href="#about" class="hover:text-blue-200 transition duration-300 ease-in-out font-medium">About Us</a></li>
-                <li><a href="#testimonials" class="hover:text-blue-200 transition duration-300 ease-in-out font-medium">Testimonials</a></li>
-                <li><a href="#contact" class="hover:text-blue-200 transition duration-300 ease-in-out font-medium">Contact</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <div class="container">
+            <h1>Splashy Dashiez</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24 px-6 md:px-12 text-center overflow-hidden rounded-lg m-4 shadow-xl">
-        <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/0000FF/FFFFFF?text=Water+Splashes'); background-size: cover; background-position: center;"></div>
-        <div class="relative z-10">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
-                Get Your Car Sparkling Clean!
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-                Premium car wash services that leave your vehicle looking brand new, inside and out.
-            </p>
-            <a href="#services" class="bg-blue-200 text-blue-800 hover:bg-blue-100 hover:text-blue-900 transition duration-300 ease-in-out font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 inline-block border-2 border-blue-200">
-                Explore Our Services
-            </a>
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h2>Experience the Ultimate Clean for Your Ride!</h2>
+            <p>From a quick wash to a detailed shine, we make your car sparkle.</p>
+            <a href="#services" class="btn">View Our Services</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 px-6 md:px-12 bg-white m-4 rounded-lg shadow-xl">
-        <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Our Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Service 1: Exterior Wash -->
-            <div class="bg-blue-50 p-8 rounded-xl shadow-md transform hover:scale-105 transition duration-300 ease-in-out border-2 border-blue-200">
-                <div class="text-5xl text-blue-600 mb-4 text-center">💧</div> <!-- Emoji for water drop -->
-                <h3 class="text-2xl font-semibold text-blue-800 mb-4 text-center">Exterior Wash</h3>
-                <p class="text-gray-700 text-center">
-                    Thorough exterior cleaning, including pre-soak, foam wash, wheel cleaning, and hand drying for a streak-free shine.
-                </p>
-                <div class="text-center mt-6">
-                    <span class="text-blue-700 font-bold text-xl">$25</span>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Basic Wash</h3>
+                    <p>Quick exterior wash, soap, rinse, and dry.</p>
+                    <p class="price">$15</p>
                 </div>
-            </div>
-
-            <!-- Service 2: Interior Detail -->
-            <div class="bg-blue-50 p-8 rounded-xl shadow-md transform hover:scale-105 transition duration-300 ease-in-out border-2 border-blue-200">
-                <div class="text-5xl text-blue-600 mb-4 text-center">✨</div> <!-- Emoji for sparkle -->
-                <h3 class="text-2xl font-semibold text-blue-800 mb-4 text-center">Interior Detail</h3>
-                <p class="text-gray-700 text-center">
-                    Vacuuming, window cleaning, dashboard wipe-down, and surface conditioning to restore your car's interior.
-                </p>
-                <div class="text-center mt-6">
-                    <span class="text-blue-700 font-bold text-xl">$50</span>
+                <div class="service-item">
+                    <h3>Deluxe Wash</h3>
+                    <p>Basic wash plus tire shine and interior vacuum.</p>
+                    <p class="price">$25</p>
                 </div>
-            </div>
-
-            <!-- Service 3: Full Detail -->
-            <div class="bg-blue-50 p-8 rounded-xl shadow-md transform hover:scale-105 transition duration-300 ease-in-out border-2 border-blue-200">
-                <div class="text-5xl text-blue-600 mb-4 text-center">🌟</div> <!-- Emoji for star -->
-                <h3 class="text-2xl font-semibold text-blue-800 mb-4 text-center">Full Detail</h3>
-                <p class="text-gray-700 text-center">
-                    Our most popular package! Combines exterior wash with a comprehensive interior detail for total perfection.
-                </p>
-                <div class="text-center mt-6">
-                    <span class="text-blue-700 font-bold text-xl">$70</span>
+                <div class="service-item">
+                    <h3>Premium Wash</h3>
+                    <p>Deluxe wash plus wax, window cleaning, and dashboard wipe.</p>
+                    <p class="price">$40</p>
+                </div>
+                <div class="service-item">
+                    <h3>Full Detail</h3>
+                    <p>Complete interior and exterior detailing for a showroom finish.</p>
+                    <p class="price">$100+</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-16 px-6 md:px-12 bg-blue-700 text-white m-4 rounded-lg shadow-xl">
-        <h2 class="text-4xl font-bold text-center mb-12">About Splashy Dashiez</h2>
-        <div class="max-w-4xl mx-auto text-lg leading-relaxed text-center">
-            <p class="mb-6">
-                At Splashy Dashiez, we're passionate about making your car shine! Located in the heart of the city, we use eco-friendly products and state-of-the-art equipment to deliver exceptional cleaning results every time.
-            </p>
-            <p class="mb-6">
-                Our team of experienced professionals is dedicated to providing meticulous care for your vehicle, ensuring a spotless finish and a truly satisfying experience. We believe a clean car is a happy car!
-            </p>
-            <p>
-                Visit us today and experience the Splashy Dashiez difference!
-            </p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Splashy Dashiez</h2>
+            <p>At Splashy Dashiez, we are passionate about providing top-notch car wash services. With state-of-the-art equipment and eco-friendly products, we ensure your vehicle receives the best care possible. Our dedicated team is committed to delivering a spotless clean and an exceptional customer experience every time.</p>
+            <p>We understand that your car is more than just transportation; it's an investment. Let us help you maintain its pristine condition and enhance its longevity. Come visit us today and see the Splashy Dashiez difference!</p>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 px-6 md:px-12 bg-white m-4 rounded-lg shadow-xl">
-        <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">What Our Customers Say</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- Testimonial 1 -->
-            <div class="bg-blue-50 p-8 rounded-xl shadow-md border-2 border-blue-200">
-                <p class="italic text-gray-700 mb-4 text-center">
-                    "My car has never looked this good! The full detail service was amazing, and the staff were incredibly friendly and efficient. Highly recommend Splashy Dashiez!"
-                </p>
-                <p class="font-semibold text-blue-800 text-right">- Jane Doe</p>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="bg-blue-50 p-8 rounded-xl shadow-md border-2 border-blue-200">
-                <p class="italic text-gray-700 mb-4 text-center">
-                    "Quick, thorough, and affordable! I'm always impressed with the quality of their exterior wash. They truly live up to their name – my car sparkles!"
-                </p>
-                <p class="font-semibold text-blue-800 text-right">- John Smith</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6 md:px-12 bg-blue-700 text-white m-4 rounded-lg shadow-xl">
-        <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
-        <div class="max-w-xl mx-auto">
-            <form class="space-y-6">
-                <div>
-                    <label for="name" class="block text-lg font-medium mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-3 rounded-md border border-blue-300 focus:ring-blue-500 focus:border-blue-500 text-gray-800" placeholder="Your Name" required>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Ready to give your car the Splashy Dashiez treatment? Contact us today!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div>
-                    <label for="email" class="block text-lg font-medium mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-3 rounded-md border border-blue-300 focus:ring-blue-500 focus:border-blue-500 text-gray-800" placeholder="your.email@example.com" required>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div>
-                    <label for="message" class="block text-lg font-medium mb-2">Message</label>
-                    <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-md border border-blue-300 focus:ring-blue-500 focus:border-blue-500 text-gray-800" placeholder="How can we help you?" required></textarea>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-200 text-blue-800 hover:bg-blue-100 hover:text-blue-900 transition duration-300 ease-in-out font-semibold py-3 rounded-md shadow-lg transform hover:scale-105">
-                    Send Message
-                </button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
+            <div id="formStatus"></div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-blue-900 text-white py-8 px-6 md:px-12 text-center rounded-t-lg mt-4 shadow-xl">
-        <p>&copy; 2025 Splashy Dashiez. All rights reserved.</p>
-        <p class="mt-2">
-            123 Clean Street, Washville, CW 98765 | Phone: (123) 456-7890 | Email: info@splashydashiez.com
-        </p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Splashy Dashiez. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://via.placeholder.com/24/fff/000?text=FB" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/24/fff/000?text=IG" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/24/fff/000?text=TW" alt="Twitter"></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- All Custom JavaScript goes here -->
-    <script>
-        // Example: Log a message when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log('Splashy Dashiez website loaded successfully!');
-
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            // You can add more JavaScript functionality here, e.g., form submission handling, animations, etc.
-        });
-    </script>
-
+    <script src="scripts/script.js"></script>
 </body>
 </html>
