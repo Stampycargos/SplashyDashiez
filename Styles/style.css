@@ -271,3 +271,78 @@ form button:hover {
 .roblox-link a:hover {
     background-color: #0056b3;
 }
+.image-gallery {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us {
+    text-align: center;
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+}
+
+.feature-card h3 {
+    color: #007bff;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    text-align: left;
+}
+
+.testimonial-card cite {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+    font-style: normal;
+}
